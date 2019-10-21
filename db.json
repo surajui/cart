@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "pic": "assets/6.jpg",
+      "name": "xyz",
+      "price": 50,
+      "qprice": 50,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "pic": "assets/2.jpg",
+      "name": "LED",
+      "price": 15000,
+      "qprice": 15000,
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "pic": "assets/3.jpg",
+      "name": "Mi",
+      "price": 20000,
+      "qprice": 20000,
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "pic": "assets/4.jpg",
+      "name": "Samsung",
+      "price": 17000,
+      "qprice": 17000,
+      "quantity": 1
+    }
+  ],
+  "pcart": [
+    {
+      "id": 2,
+      "pic": "assets/2.jpg",
+      "name": "LED",
+      "price": 15000,
+      "qprice": 30000,
+      "quantity": 2
+    },
+    {
+      "id": 3,
+      "pic": "assets/3.jpg",
+      "name": "Mi",
+      "price": 20000,
+      "qprice": 60000,
+      "quantity": 3
+    }
+  ]
+}

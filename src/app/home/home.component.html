@@ -1,0 +1,16 @@
+<table class="table table-hover">
+    <tr>
+        <th>Item</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Remove</th>
+    </tr>
+    <tr *ngFor="let b of data">
+        <td><img src="{{b.pic}}"></td>
+        <td>{{b.name}}</td>
+        <td><button class="btn btn-info" (click)="sub(b.id)">-</button>{{b.quantity}}<button class="btn btn-info" (click)="add(b.id)">+</button></td>
+        <td>{{b.qprice}}</td>
+        <td><button class="btn btn-danger" (click)="fun(b.id)">Remove</button></td>
+    </tr>
+</table>

@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let s of result" class="col-4">
+            <img src="{{s.pic}}" width="270px">
+            <h3 class="text-success">{{s.name}}</h3>
+            <p>&nbsp;<span>&#x20b9;{{s.price}}</span></p>
+            <button class="btn btn-info" (click)="addcart(s)" data-toggle="modal" data-target="#exampleModalCenter">Add Cart</button>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">ADDED TO CART</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            item has added to your cart
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue</button>
+            <button type="button" class="btn btn-primary" (click)="cart()" data-dismiss="modal">Goto Cart</button>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
